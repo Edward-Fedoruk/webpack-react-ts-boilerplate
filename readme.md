@@ -4,9 +4,6 @@
 > with real time server changes ;)
 
 
-
-![Real time change](https://cdn-images-1.medium.com/max/1600/1*0Slpwk3trmF7kLeoFp5UOw.gif)
-
 ### Table of contents
 [Project structure](#project-structure)
 
