@@ -16,7 +16,6 @@ module.exports = webpackMerge([
       compress: true,
       hot: true,
     },
-    devtool: 'source-map',
     plugins: [new webpack.HotModuleReplacementPlugin()],
   },
   sass(),
