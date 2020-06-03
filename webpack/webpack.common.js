@@ -4,8 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const commonPaths = require('./paths');
 
-const isDevelopment = process.env.NODE_ENV === 'development'
-
 module.exports = {
   entry: commonPaths.entryPath,
   mode: process.NODE_ENV,
@@ -32,6 +30,15 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.(ts|tsx)$/,
+        loader: "awesome-typescript-loader",
+      },
+      {
+        enforce: "pre",
+        test: /\.js$/,
+        loader: "source-map-loader",
       },
     ],
   },
