@@ -1,7 +1,7 @@
 ## React and Webpack 4 boilerplate with TS Saga GraphQL 
 
 > Minimal webpack and react boilerplate using latest version of react and babel as well as jest and enzyme for more details about technologies used. [click](#technologies-used) 
-> with real time server changes ;)
+> with real time server changes )
 
 
 ### Table of contents
