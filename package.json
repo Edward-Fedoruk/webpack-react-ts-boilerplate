@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --env.NODE_ENV=development --open",
-    "prod": "webpack --env.NODE_ENV=production"
+    "prod": "webpack --env.NODE_ENV=production",
+    "test": "jest",
+    "test-watch": "jest --watch"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +19,8 @@
     "awesome-typescript-loader": "^5.2.1",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.5.3",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2",
@@ -41,7 +44,11 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "@types/enzyme": "^3.10.5",
+    "@types/jest": "^25.2.3",
+    "jest": "^26.0.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "ts-jest": "^26.1.0"
   }
 }

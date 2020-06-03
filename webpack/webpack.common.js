@@ -15,7 +15,7 @@ module.exports = webpackMerge([
       modules: ['node_modules'],
       extensions: ['*', '.js', '.tsx', '.css', '.scss', '.ts'],
       alias: {
-        Components: path.resolve(__dirname, 'src/Components/')
+        components: path.resolve(__dirname, 'src/components/')
       }
     },
     plugins: [
