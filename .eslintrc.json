@@ -1,7 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "jest": true
     },
     "extends": [
         "plugin:react/recommended",
@@ -25,6 +26,33 @@
     ],
     "rules": {
         "linebreak-style": "off",
-        "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }]
+        "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+              "js": "never",
+              "jsx": "never",
+              "ts": "never",
+              "tsx": "never"
+            }
+         ],
+         "no-unused-vars": "off",
+         "@typescript-eslint/no-unused-vars": "error"
+        },
+    "overrides": [
+        {
+            "files": ["**/*.tsx"],
+            "rules": {
+                "react/prop-types": "off"
+            }
+        }
+    ],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
     }
 }
